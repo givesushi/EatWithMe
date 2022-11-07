@@ -1,5 +1,5 @@
-/* 
-	Global classes 
+/*
+	Global classes
 					*/
 body {
 	background-image: url("assets/iphoneOL.jpg");
@@ -16,14 +16,59 @@ body {
 }
 
 .head-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 60px;
-	background: #D3DFE7;
+	background-color: #004E89;
+	color: white;
 }
 
 
 .footer {
 	height: 55px;
-	background: #BE2B2B;
+	background-color: #BE2B2B;
 	margin-top: 415px;
-	
+
 }
+
+
+#splash-screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: #5F8CA9;
+}
+
+.splash-container{
+}
+
+.headline{
+	color: #004E89;
+	text-align: center;
+	padding-top: 40%;
+}
+
+.tagline{
+	color: #004E89;
+	text-align: center;
+	font-size: 0.8em;
+	padding-top: 20%;
+	padding-bottom: 20%;
+
+
+}
+
+.start-button{
+	background-color: white;
+	border: 1.5px dashed #004E89;
+	color: #004E89;
+	width: 7em;
+	height: 2em;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
