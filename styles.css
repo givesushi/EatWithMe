@@ -13,3 +13,16 @@ body {
 	width: 300px;
 	margin: 105px 23px;
 }
+
+.head-bar {
+	height: 60px;
+	background: blue;
+}
+
+
+.footer {
+	height: 55px;
+	background: red;
+	margin-top: 415px;
+	
+}
