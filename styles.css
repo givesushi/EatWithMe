@@ -7,6 +7,9 @@ body {
 	font-family: Avenir, sans-serif;
 }
 
+a {
+   color:inherit;
+}
 
 #screen {
 	height: 530px;
@@ -26,9 +29,11 @@ body {
 
 
 .footer {
+	position: absolute;
 	height: 55px;
+	width: 300px;
 	background-color: #BE2B2B;
-	margin-top: 415px;
+	bottom: -10px;
 
 }
 
@@ -47,6 +52,7 @@ body {
 	color: #004E89;
 	text-align: center;
 	padding-top: 40%;
+	font-style: italic;
 }
 
 .tagline{
@@ -55,6 +61,7 @@ body {
 	font-size: 0.8em;
 	padding-top: 20%;
 	padding-bottom: 20%;
+	font-style: italic;
 
 
 }
@@ -71,4 +78,3 @@ body {
 	justify-content: center;
 
 }
-
