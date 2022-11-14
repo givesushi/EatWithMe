@@ -27,13 +27,20 @@ a {
 	color: white;
 }
 
-
 .footer {
 	position: absolute;
 	height: 55px;
 	width: 300px;
 	background-color: #BE2B2B;
-	bottom: -10px;
+	top: 581px;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.icon {
 
 }
 
