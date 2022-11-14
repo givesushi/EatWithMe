@@ -85,3 +85,85 @@ a {
 	justify-content: center;
 
 }
+
+
+/* below styles are for profile_page */
+
+#profile-pic {
+	font-size: 72px;
+}
+
+.details-container {
+	margin-left: 20px;
+}
+
+.page-content {
+	padding: 20px;
+	margin-top: -25px;
+}
+
+.top {
+	display: flex;
+	margin-left: -10px;
+	margin-top: -15px;
+}
+
+input {
+	width: 80%;
+	margin: 8px 0;
+	border: none;
+	outline: none;
+	background-color: #D3DFE7;
+	vertical-align: top;
+  }
+
+  input::placeholder {
+	color: black
+  }
+
+  #bio {
+	margin-top: -10px;
+	height: 100px;
+	width: 100%;
+  }
+
+  #name {
+	font-size: 25px;
+  }
+
+  #pronouns {
+	font-size: 18px;
+	margin-top: -4px;
+  }
+  
+  input:focus {
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid black;
+	outline: none;
+  }
+
+  .external-selectors {
+	margin-top: 30px;
+  }
+
+  .external-selectors h3 {
+	border: 1px solid black;
+	padding-left: 2px;
+	margin-top: -15px;
+  }
+
+  .external-selectors a {
+	text-decoration: none;
+  }
+
+  .external-selectors input {
+	border: 1px solid black;
+	width: 100%;
+	height: 30px;
+  }
+
+  #arrow {
+	margin-left: 90%;
+	margin-top: -45px;
+  }
