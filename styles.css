@@ -276,3 +276,59 @@ a {
   #move-me {
 	margin-left: -140px;
   }
+
+
+.refresh-mesg{
+		padding-top: 1rem;
+		font-size: 1.2rem;
+		color: grey;
+	}
+
+	.time-container{
+		margin-top: -.5rem;
+		margin-bottom: 2rem;
+		display: flex;
+	}
+
+	.day-container{
+		display: flex;
+		margin-left: 4rem;
+	}
+
+	#day-select{
+		font-size: .8rem;
+		width: 3.75rem;
+		text-align: center;
+		background-color: white;
+		border: 1px solid black;
+
+	}
+
+	.search-profile{
+		display: flex;
+	}
+
+	.search-details-container{
+	}
+
+	.message-button-container{
+		position: relative;
+		margin-left: auto;
+		margin-top: 1rem;
+	}
+
+	.message-button{
+		background-color: #004E89;
+		color: white;
+		width: 4rem;
+		text-align: center;
+		border: 1px solid black;
+		margin-bottom: .4rem;
+		font-size: .59rem;
+	}
+
+	.quick-message{
+		background-color: lightgrey;
+		font-size: .55rem;
+		color: black;
+	}
