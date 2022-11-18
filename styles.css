@@ -295,7 +295,7 @@ a {
 		margin-left: 4rem;
 	}
 
-	#day-select{
+	.day-select{
 		font-size: .8rem;
 		width: 3.75rem;
 		text-align: center;
@@ -320,16 +320,18 @@ a {
 	.message-button{
 		background-color: #004E89;
 		color: white;
-		width: 4rem;
+		width: 4.2rem;
 		text-align: center;
 		border: 1px solid black;
 		margin-bottom: .4rem;
-		font-size: .59rem;
+		font-size: .57rem;
+		border-radius: 8px;
+		padding: 2px;
 	}
 
 	.quick-message{
 		background-color: lightgrey;
-		font-size: .55rem;
+		font-size: .57rem;
 		color: black;
 	}
 
