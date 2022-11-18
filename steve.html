@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>EatWithMe</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <script>
+
+      function printMessage(message) {
+          document.getElementById("user-input-here").innerHTML = "<p>"+message+"</p>";
+      }
+
+    </script>
+    <body>
+        <div id="screen">
+              <div class="head-bar">
+                <a href="message_inbox.html"><span class="material-symbols-outlined" id="arrow-2">chevron_left</span></a>
+                <h1 id="move-me">EatWithMe</h1>
+              </div>
+
+                <div class="message-header-container">
+
+                  <div class="top">
+                    
+                      <div class="image-container">
+                        <img src="assets/steve.jpeg"/>
+                      </div>
+                      <div class="details-container">
+                        <h1 class="profile_input" id="messages-profile-name">Steve</h1>
+                        <h1 class="profile_input" id="messages-profile-details">Shared Interests: Art</h1>
+                      </div>
+                  </div>
+
+                </div>
+                <hr>
+
+                <div class="message-bubble-recipient" id="user-input-here"></div>
+
+                <textarea id="message-box" placeholder="Send a message..."></textarea>
+
+                <button type="button" id="send-button" onclick="printMessage(document.getElementById('message-box').value)">Send</button>
+
+              <div class="footer">
+                <a href="profile_page.html">
+                  <div class="icon"><i class="material-icons">person</i></div>
+                </a>
+                <a href="search.html">
+                  <div chlass="icon"><i class="material-icons">search</i></div>
+                </a>
+
+                <a href="message_inbox.html">
+                  <div class="icon"><i class="material-icons">message</i></div>
+                </a>
+              </div>
+
+
+        </div>
+   </body>
+</html>
+<!--
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
