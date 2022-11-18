@@ -221,3 +221,12 @@ a {
 	border: 1px solid black;
 	margin-left: 5px;
   }
+
+
+  #screen-interest{
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: #D3DFE7;
+	overflow-y: scroll;
+  }
