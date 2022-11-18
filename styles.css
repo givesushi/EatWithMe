@@ -230,3 +230,49 @@ a {
 	background-color: #D3DFE7;
 	overflow-y: scroll;
   }
+
+
+
+  .message-header-container {
+	margin-left: 15px;
+	margin-top: 30px;
+  }
+
+  #message-box {
+	width: 240px;
+	margin-left: 5px;
+	height: 50px;
+	position: absolute;
+	top: 525px;
+  }
+
+  #send-button {
+	height: 50px;
+	position: absolute;
+	top: 525px;
+	left: 280px;
+  }
+
+  .message-bubble-sender p {
+	padding: 5px;
+	border: 1px solid black;
+	max-width: 40%;
+	margin-left: 3%;
+
+  }
+
+  .message-bubble-recipient p {
+	padding: 5px;
+	border: 1px solid black;
+	max-width: 40%;
+	margin-left: 53%;
+  }
+
+  #arrow-2 {
+	margin-left: -60px;
+	font-size: 30px;
+  }
+
+  #move-me {
+	margin-left: -140px;
+  }
