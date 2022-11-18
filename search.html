@@ -2,15 +2,152 @@
     <head>
         <title>EatWithMe</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <div id="screen">
-              <div class="head-bar">
-                    <h1>EatWithMe</h1>
+          <div class="head-bar">
+                <h1>EatWithMe</h1>
+          </div>
+
+
+              <div class="page-content">
+
+                <h2>Availabilty</h2>
+
+                <div class="time-container">
+                  <select name="time" id="time">                    
+                    <option value="7:00am">7:00am</option>
+                    <option value="7:30am">7:30am</option>
+                    <option value="8:00am">8:00am</option>
+                    <option value="8:30am">8:30am</option>
+                    <option value="9:00am">9:00am</option>
+                    <option value="9:30am">9:30am</option>
+                    <option value="10:00am">10:00am</option>
+                    <option value="10:30am">10:30am</option>
+                    <option value="11:00am">11:00am</option>
+                    <option value="11:30am">11:30am</option>
+                    <option value="12:00pm">12:00pm</option>
+                    <option value="12:30pm">12:30pm</option>
+                    <option value="1:00pm">1:00pm</option>
+                    <option value="1:30pm">1:30pm</option>
+                    <option value="2:00pm">2:00pm</option>
+                    <option value="2:30pm">2:30pm</option>
+                    <option value="3:00pm">3:00pm</option>
+                    <option value="3:30pm">3:30pm</option>
+                    <option value="4:00pm">4:00pm</option>
+                    <option value="4:30pm">4:30pm</option>
+                    <option value="5:00pm">5:00pm</option>
+                    <option value="5:30pm">5:30pm</option>
+                    <option value="6:00pm">6:00pm</option>
+                    <option value="6:30pm">6:30pm</option>
+                    <option value="7:00pm">7:00pm</option>
+                    <option value="7:30pm">7:30pm</option>
+                    <option value="8:00pm">8:00pm</option>
+                    <option value="8:30pm">8:30pm</option>
+                    <option value="9:00pm">9:00pm</option>
+                    <option value="9:30pm">9:30pm</option>
+                  </select>
+
+                  <div class="day-container">
+                    <div id="day-select" onclick="daySelect()">
+                      Today
+                    </div>
+
+                    <div id="day-select" onclick="daySelect()">
+                      Tomorrow
+                    </div>
+
+                  </div>
+
+                </div>
+
+                  <div class="search-profile">
+                      <a href="" class="image-container">
+                        <img src="assets/sara.jpeg"/>
+                      </a>
+                      <div class="search-details-container">
+                        <div class="details-container">
+                          <h1 class="profile_input" id="messages-profile-name">Sara</h1>
+                          <h1 class="profile_input" id="messages-profile-details">Football</h1>
+                        </div>
+                      </div>
+                      <div class="message-button-container">
+                        <a href="">
+                          <div class="message-button quick-message">
+                            Hey! Let's Meet!
+                          </div>
+                        </a>
+
+                        <a href="">
+                          <div class="message-button">
+                            Message
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+
+                <br>
+
+                <div class="search-profile">
+                    <a href="" class="image-container">
+                      <img src="assets/steve.jpeg"/>
+                    </a>
+                    <div class="search-details-container">
+                      <div class="details-container">
+                        <h1 class="profile_input" id="messages-profile-name">Steve</h1>
+                        <h1 class="profile_input" id="messages-profile-details">Art, Environment</h1>
+                      </div>
+                    </div>
+                    <div class="message-button-container">
+                      <a href="">
+                        <div class="message-button quick-message">
+                          Hey! Let's Meet!
+                        </div>
+                      </a>
+
+                      <a href="">
+                        <div class="message-button">
+                          Message
+                        </div>
+                      </a>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="refresh-mesg">
+                  Refresh or select a new time to find more matches!
+                </div>
+
+
+
               </div>
+
+
+              <div class="footer">
+                <a href="profile_page.html">
+                  <div class="icon"><i class="material-icons">person</i></div>
+                </a>
+                <a href="search.html">
+                  <div chlass="icon"><i class="material-icons">search</i></div>
+                </a>
+
+                <a href="message_inbox.html">
+                  <div class="icon"><i class="material-icons">message</i></div>
+                </a>
+              </div>
+
+
+
+
+
+
+
+
         </div>
    </body>
 </html>
-<!-- 
+<!--
 * bg iphone img is 363x762px
 * iphone 'screen' is apprx 300x530 -->
