@@ -16,7 +16,7 @@
                 <h2>Availabilty</h2>
 
                 <div class="time-container">
-                  <select name="time" id="time">                    
+                  <select name="time" id="time">
                     <option value="7:00am">7:00am</option>
                     <option value="7:30am">7:30am</option>
                     <option value="8:00am">8:00am</option>
@@ -50,11 +50,11 @@
                   </select>
 
                   <div class="day-container">
-                    <div id="day-select" onclick="daySelect()">
+                    <div class="day-select" id="select-today" onclick="daySelect(this)">
                       Today
                     </div>
 
-                    <div id="day-select" onclick="daySelect()">
+                    <div class="day-select" id="select-tomorrow" onclick="daySelect(this)">
                       Tomorrow
                     </div>
 
@@ -63,7 +63,7 @@
                 </div>
 
                   <div class="search-profile">
-                      <a href="" class="image-container">
+                      <a href="sara_profile.html" class="image-container">
                         <img src="assets/sara.jpeg"/>
                       </a>
                       <div class="search-details-container">
@@ -146,6 +146,24 @@
 
 
         </div>
+        <script>
+        function init(){
+          document.getElementById('select-today').style.background = "lightgrey";
+        };
+
+        function daySelect(x){
+          if ( x.id == "select-today") {
+            document.getElementById('select-today').style.background = "lightgrey";
+            document.getElementById('select-tomorrow').style.background = "white";
+          } else{
+            document.getElementById('select-today').style.background = "white";
+            document.getElementById('select-tomorrow').style.background = "lightgrey";
+          }
+        };
+
+        init();
+
+        </script>
    </body>
 </html>
 <!--
