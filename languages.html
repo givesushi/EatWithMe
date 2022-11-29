@@ -13,7 +13,7 @@
 
                  <h1 class="title-head">EatWithMe</h1>
 
-                  <button type="button" id="save-button" name="save">Save</button>
+                  <button type="button" id="save-button" name="save" onclick="update()">Save</button>
           </div>
 
               <div class="profile_title">
@@ -48,15 +48,67 @@
                   <label for="italian">Italian</label>
               </div>
 
-
-
-
-
-
-
-
-
         </div>
+        <script>
+
+                function init(){
+                  let getLanguages = JSON.parse(sessionStorage.getItem('storeLanguages'));
+
+                  for (var i = 0; i < getLanguages.length; i++) {
+                    if (getLanguages[i] == "english" ) {
+                      document.getElementById("english").checked = true;
+                    } else if(getLanguages[i] == "spanish") {
+                      document.getElementById("spanish").checked = true;
+
+                    } else if(getLanguages[i] == "chinese") {
+                      document.getElementById("chinese").checked = true;
+
+                    } else if(getLanguages[i] == "french") {
+                      document.getElementById("french").checked = true;
+
+                    } else if(getLanguages[i] == "german") {
+                      document.getElementById("german").checked = true;
+
+                    } else if(getLanguages[i] == "italian") {
+                      document.getElementById("italian").checked = true;
+                    }
+                  }
+
+
+
+                };
+
+                function update(){
+                  var languages = [];
+                  if (document.getElementById("english").checked) {
+                    languages.push("english");
+                  } if(document.getElementById("spanish").checked) {
+                    languages.push("spanish");
+
+                  } if (document.getElementById("chinese").checked) {
+                    languages.push("chinese");
+
+                  } if(document.getElementById("french").checked) {
+                    languages.push("french");
+
+                  } if(document.getElementById("german").checked) {
+                    languages.push("german");
+
+                  } if(document.getElementById("italian").checked) {
+                    languages.push("italian");
+
+                  }
+
+                  sessionStorage.setItem('storeLanguages', JSON.stringify(languages));
+
+                };
+
+                init();
+
+
+
+      </script>
+
    </body>
 </html>
 <!--

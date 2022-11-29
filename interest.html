@@ -13,7 +13,7 @@
 
                  <h1 class="title-head">EatWithMe</h1>
 
-                 <button type="button" id="save-button" name="save">Save</button>
+                 <button type="button" id="save-button" name="save"  onclick="update()">Save</button>
           </div>
 
               <div class="profile_title">
@@ -49,8 +49,8 @@
                   <br>
 
 
-                  <input type="checkbox" id="singing" name="interest" value="" >
-                  <label for="singing">Singing</label>
+                  <input type="checkbox" id="dancing" name="interest" value="" >
+                  <label for="dancing">Dancing</label>
 
                 </div>
 
@@ -116,20 +116,93 @@
 
                 </div>
 
-
-
-
-
               </div>
 
-
-
-
-
-
-
-
         </div>
+        <script>
+
+                function init(){
+
+                  let getInterest = JSON.parse(sessionStorage.getItem('storeInterest'));
+
+
+
+                  for (var i = 0; i < getInterest.length; i++) {
+                    if (getInterest[i] == "art" ) {
+                      document.getElementById("art").checked = true;
+                    } else if(getInterest[i] == "photography") {
+                      document.getElementById("photography").checked = true;
+
+                    } else if(getInterest[i] == "crafts") {
+                      document.getElementById("crafts").checked = true;
+
+                    } else if(getInterest[i] == "singing") {
+                      document.getElementById("singing").checked = true;
+
+                    } else if(getInterest[i] == "guitar") {
+                      document.getElementById("guitar").checked = true;
+
+                    } else if(getInterest[i] == "dancing") {
+                      document.getElementById("dancing").checked = true;
+
+                    } else if(getInterest[i] == "football") {
+                      document.getElementById("football").checked = true;
+
+                    } else if(getInterest[i] == "rockclimbing") {
+                      document.getElementById("rockclimbing").checked = true;
+
+                    } else if(getInterest[i] == "golf") {
+                      document.getElementById("golf").checked = true;
+
+                    } else if(getInterest[i] == "basketball") {
+                      document.getElementById("basketball").checked = true;
+
+                    } else if(getInterest[i] == "lacrosse") {
+                      document.getElementById("lacrosse").checked = true;
+
+                    } else if(getInterest[i] == "soccer") {
+                      document.getElementById("soccer").checked = true;
+
+                    } else if(getInterest[i] == "hiking") {
+                      document.getElementById("hiking").checked = true;
+
+                    } else if(getInterest[i] == "fishing") {
+                      document.getElementById("fishing").checked = true;
+
+                    } else if(getInterest[i] == "nature") {
+                      document.getElementById("nature").checked = true;
+
+                    } else if(getInterest[i] == "beaches") {
+                      document.getElementById("beaches").checked = true;
+
+                    } else if(getInterest[i] == "camping") {
+                      document.getElementById("camping").checked = true;
+
+                    } else if(getInterest[i] == "mountains") {
+                      document.getElementById("mountains").checked = true;
+                    }
+                  }
+
+
+
+                };
+
+                function update(){
+                  var interest = [];
+                  var markedCheckbox = document.getElementsByName('interest');
+                  for (var checkbox of markedCheckbox) {
+                    if (checkbox.checked)
+                      interest.push(checkbox.id);
+                    }
+
+                sessionStorage.setItem('storeInterest', JSON.stringify(interest));
+
+                };
+
+                init();
+
+
+      </script>
    </body>
 </html>
 <!--

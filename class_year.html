@@ -12,7 +12,7 @@
                      </a>
 
                      <h1 class="title-head">EatWithMe</h1>
-                      <button type="button" id="save-button" name="save">Save</button>
+                      <button type="button" id="save-button" name="save" onclick="update()">Save</button>
               </div>
 
               <div class="profile_title">
@@ -38,13 +38,49 @@
               </div>
 
 
-
-
-
-
-
-
         </div>
+        <script>
+
+
+        function init(){
+          let getClassYear = sessionStorage.getItem('storeClassYear');
+
+          if (getClassYear == "freshman" ) {
+            document.getElementById("freshman").checked = true;
+          } if(getClassYear == "sophmore") {
+            document.getElementById("sophmore").checked = true;
+
+          } if(getClassYear == "junior") {
+            document.getElementById("junior").checked = true;
+
+          } if(getClassYear == "senior") {
+            document.getElementById("senior").checked = true;
+          }
+
+
+        };
+
+        function update(){
+          var classYear = "none";
+          if (document.getElementById("freshman").checked) {
+            classYear ="freshman";
+          } if(document.getElementById("sophmore").checked) {
+            classYear ="sophmore";
+
+          } if (document.getElementById("junior").checked) {
+            classYear ="junior";
+
+          } if(document.getElementById("senior").checked) {
+            classYear ="senior";
+          }
+          sessionStorage.setItem('storeClassYear', classYear);
+
+        };
+
+        init();
+
+
+        </script>
    </body>
 </html>
 <!--

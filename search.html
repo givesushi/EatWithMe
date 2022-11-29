@@ -147,21 +147,23 @@
 
         </div>
         <script>
-        function init(){
-          document.getElementById('select-today').style.background = "lightgrey";
-        };
 
         function daySelect(x){
           if ( x.id == "select-today") {
-            document.getElementById('select-today').style.background = "lightgrey";
+            document.getElementById('select-today').style.background = "#004E89";
+            document.getElementById('select-today').style.color = "white";
             document.getElementById('select-tomorrow').style.background = "white";
+            document.getElementById('select-tomorrow').style.color = "black";
+
           } else{
             document.getElementById('select-today').style.background = "white";
-            document.getElementById('select-tomorrow').style.background = "lightgrey";
+            document.getElementById('select-today').style.color = "black";
+            document.getElementById('select-tomorrow').style.background = "#004E89";
+            document.getElementById('select-tomorrow').style.color = "white";
           }
         };
 
-        init();
+        
 
         </script>
    </body>
